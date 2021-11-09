@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+    <script src="p5.play.js"></script>
+    
+<!-- El SDK de Firebase JS principal siempre es obligatorio y se debe figurar primero -->
+<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-database.js"></script>
+<!-- TODO: Agrega SDK para los productos de Firebase que quieras usar
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  
+const firebaseConfig = {
+  apiKey: "AIzaSyC_D3HSDy9moWSe-Qe1WZDumbwZdqnujVc",
+  authDomain: "ternoinaica.firebaseapp.com",
+  databaseURL: "https://ternoinaica-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "ternoinaica",
+  storageBucket: "ternoinaica.appspot.com",
+  messagingSenderId: "131120103679",
+  appId: "1:131120103679:web:d8bac3b2cee4b10fd7ccca"
+};
+  // Inicializar Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <meta charset="utf-8">
+
+  </head>
+  <body>
+      <script src="sketch.js"></script>
+    </body>
+</html>
